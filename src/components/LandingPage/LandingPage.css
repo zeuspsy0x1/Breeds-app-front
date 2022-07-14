@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+#root {
+	background-color: #1d2549;
+	height: 100%;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.landing-container {
+	height: 100vh; /* Estos 100vh son los que no dejan que se genere scroll innecesario que no quiero */
+	display: grid;
+	grid-template-columns: 100vw;
+	/* 	justify-items: center; */
+	grid-template-rows: 5fr 0.1fr 0.3fr 0.05fr;
+	grid-template-areas:
+		'header'
+		'button'
+		'dogsImage'
+		'links';
+}
+
+.landing-header {
+	color: #bdf347;
+	font-size: 6rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 30vh;
+}
+.landing-button-div {
+	grid-area: button;
+	display: flex;
+	justify-content: center;
+	/* display: grid; */
+	justify-items: center;
+}
+.landing-button {
+	background-color: #bdf347;
+	border: none;
+	border-radius: 5px;
+	color: #1d2549;
+	font-size: 1.5rem;
+	font-weight: bold;
+	height: 4rem;
+	width: 8rem;
+}
+.landing-button:hover {
+	box-shadow: 0 0 20px rgb(42, 231, 99);
+}
+.landing-button:active {
+	transform: scale3d(0.97, 0.97, 0.97);
+	box-shadow: 0 0 100px rgb(42, 231, 99);
+}
+.landing-dogsImage {
+	grid-area: dogsImage;
+	height: 300px;
+	object-fit: cover;
+	justify-self: center;
+	align-self: center;
+	margin-top: 10vh;
+}
+
+.landing-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: flex-end;
+	float: right;
+}
+
+.landing-imgLinkedin {
+	display: grid;
+	width: 4vh;
+	height: 4vh;
+}
+.landing-imgGithub {
+	display: grid;
+	width: 19vh;
+	height: 4vh;
+}
+
+/* height: 100vh; Estos 100vh son los que no dejan que se genere scroll innecesario que no quiero  */
+/*float: right;  FLOAT manda todo de una a la posicion que uno le diga, pero no puede ser hijo de flex */
