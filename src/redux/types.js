@@ -20,5 +20,5 @@ const LINK_TO_BACKEND = 'https://breeds-app.herokuapp.com/'
 export const LINK_GET_BREEDS = `${LINK_TO_BACKEND}breeds`
 export const LINK_GET_BREED_BY_NAME = `${LINK_TO_BACKEND}breeds/name?name=`
 export const LINK_GET_BREED_BY_ID = `${LINK_TO_BACKEND}breeds/`
-export const LINK_GET_TEMPERAMENTS = `${LINK_TO_BACKEND}temperaments`
+export const LINK_GET_TEMPERAMENTS = `https://breeds-app.herokuapp.com/temperaments`
 export const LINK_POST_BREED = `${LINK_TO_BACKEND}create`
