@@ -15,8 +15,10 @@ export const CLEAR_FILTERS = 'CLEAR_FILTERS'
 export const CLEAR_DETAILS = 'CLEAR_DETAILS'
 
 //LINKS TO BACKEND (REST PETITIONS)
-export const LINK_GET_BREEDS = 'http://localhost:5000/breeds'
-export const LINK_GET_BREED_BY_NAME = 'http://localhost:5000/breeds/name?name='
-export const LINK_GET_BREED_BY_ID = 'http://localhost:5000/breeds/'
-export const LINK_GET_TEMPERAMENTS = 'http://localhost:5000/temperaments'
-export const LINK_POST_BREED = 'http://localhost:5000/create'
+const LINK_TO_BACKEND = 'https://breeds-app.herokuapp.com'
+
+export const LINK_GET_BREEDS = `${LINK_TO_BACKEND}/breeds`
+export const LINK_GET_BREED_BY_NAME = '${LINK_TO_BACKEND}/breeds/name?name='
+export const LINK_GET_BREED_BY_ID = '${LINK_TO_BACKEND}/breeds/'
+export const LINK_GET_TEMPERAMENTS = '${LINK_TO_BACKEND}/temperaments'
+export const LINK_POST_BREED = '${LINK_TO_BACKEND}/create'
